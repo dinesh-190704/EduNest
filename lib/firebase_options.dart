@@ -1,0 +1,62 @@
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
+
+class DefaultFirebaseOptions {
+  static FirebaseOptions get currentPlatform {
+    if (kIsWeb) {
+      return web;
+    }
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        return android;
+      case TargetPlatform.iOS:
+        return ios;
+      case TargetPlatform.macOS:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.windows:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      case TargetPlatform.linux:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for linux - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not supported for this platform.',
+        );
+    }
+  }
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDHP2QzPRGumpff7JrdcbsxX6dQj8Y36n0',
+    appId: '1:166907206159:web:feb244f9ff828fb149217a',
+    messagingSenderId: '166907206159',
+    projectId: 'edunest-app-db8d5',
+    storageBucket: 'edunest-app-db8d5.firebasestorage.app',
+    authDomain: 'edunest-app-db8d5.firebaseapp.com',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDHP2QzPRGumpff7JrdcbsxX6dQj8Y36n0',
+    appId: '1:166907206159:android:feb244f9ff828fb149217a',
+    messagingSenderId: '166907206159',
+    projectId: 'edunest-app-db8d5',
+    storageBucket: 'edunest-app-db8d5.firebasestorage.app',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDHP2QzPRGumpff7JrdcbsxX6dQj8Y36n0',
+    appId: '1:166907206159:ios:feb244f9ff828fb149217a',
+    messagingSenderId: '166907206159',
+    projectId: 'edunest-app-db8d5',
+    storageBucket: 'edunest-app-db8d5.firebasestorage.app',
+    iosBundleId: 'com.example.edunestApp',
+  );
+}
