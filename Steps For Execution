@@ -1,0 +1,41 @@
+Install Dependencies
+bash
+Copy
+Edit
+flutter pub get
+
+Configure Firebase
+Create a Firebase project
+
+Add your GoogleService-Info.plist and google-services.json files to iOS and Android folders respectively
+
+Enable Email/Phone Auth in Firebase Console
+
+Set up Firestore Database, Cloud Storage, and FCM
+
+Run the App
+bash
+Copy
+Edit
+flutter run
+You can target:
+
+Android emulator/device
+
+iOS Simulator
+
+Web browser
+
+Desktop (Windows/Linux/macOS)
+
+🔑 Features Overview
+Module	Description
+Authentication	OTP-based login with Firebase, RBAC (Student/Admin)
+Student Dashboard	View assignments, attendance, tech news, chat, leave requests
+Admin Dashboard	Upload notes, manage events, track bus routes, approve leaves
+E-Library & Notes	Upload/download PDFs, DOCs
+Chat Module	Real-time messaging with teachers
+Bus Tracking	Geo-based location of buses
+Leave System	Request and approve leaves
+Tech News	Department-wise announcements
+Lost & Found	Post and browse lost/found items
