@@ -1,4 +1,7 @@
+**For contact:campusdev011@gmail.com**
+
 # EduNest – College Management Application
+
 
 **EduNest** is a cross-platform college management mobile application developed using **Flutter Dart** and integrated with **Firebase**. It simplifies academic, administrative, and communication tasks within a college environment through an intuitive, role-based interface for students, faculty, and administrators.
 
@@ -65,3 +68,5 @@ EduNest provides a centralized platform to manage key functions in a college suc
 ```bash
 git clone https://github.com/your-username/edunest.git
 cd edunest
+
+****For contact:campusdev011@gmail.com****
